@@ -98,15 +98,15 @@
 //		break;
 //	}
 //}
-int main()
-{
-	char 字符;
-	字符 = getchar();
-	if (字符>='a' && 字符<='z')
-	{
-		字符 -= 32;
-		printf("%c\n", 字符);
-			return 0;
-	}
-
-}
+//int main()
+//{
+//	char 字符;
+//	字符 = getchar();
+//	if (字符>='a' && 字符<='z')
+//	{
+//		字符 -= 32;
+//		printf("%c\n", 字符);
+//			return 0;
+//	}
+//
+//}
