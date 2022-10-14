@@ -110,3 +110,11 @@
 //	}
 //
 //}
+int main()
+{
+	int line = 0;
+	for ( line = 0; line < 1000; line++)
+	{
+		printf("好offer\n");
+	}
+}
