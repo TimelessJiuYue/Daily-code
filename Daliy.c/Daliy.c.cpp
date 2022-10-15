@@ -110,11 +110,20 @@
 //	}
 //
 //}
-int main()
+/*int main()
 {
 	int line = 0;
 	for ( line = 0; line < 1000; line++)
 	{
 		printf("好offer\n");
+	}
+}*/
+int main()
+{
+	int i = 0;
+	while (i<=100)
+	{
+		i = i + 1;
+		printf("%d", i);
 	}
 }
