@@ -118,12 +118,22 @@
 		printf("好offer\n");
 	}
 }*/
+//int main()
+//{
+//	int i = 0;
+//	while (i<=100)
+//	{
+//		i = i + 1;
+//		printf("%d", i);
+//	}
 int main()
 {
-	int i = 0;
-	while (i<=100)
+	int i, sum=0;
+	for ( i = 0; i <= 100; i++)
 	{
-		i = i + 1;
-		printf("%d", i);
+		sum += i;
 	}
+	printf("%d", sum);
+	return 0;
+	
 }
