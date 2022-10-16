@@ -126,8 +126,11 @@
 //		i = i + 1;
 //		printf("%d", i);
 //	}
+#include <math.h>
+#include <string.h>
 int main()
-{
+
+/* {
 	int i, sum=0;
 	for ( i = 0; i <= 100; i++)
 	{
@@ -135,5 +138,11 @@ int main()
 	}
 	printf("%d", sum);
 	return 0;
-	
+
+}*/
+{
+	double d = 300000, p = 6000, r = 0.01, m;
+	m = log10(p / (p - d * r)) / log10(1 + r);
+	printf("m=%5.2\n",m);
+	return 0;
 }
