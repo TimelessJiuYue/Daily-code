@@ -126,9 +126,9 @@
 //		i = i + 1;
 //		printf("%d", i);
 //	}
-#include <math.h>
-#include <string.h>
-int main()
+//#include <math.h>
+
+//int main()
 
 /* {
 	int i, sum=0;
@@ -140,9 +140,17 @@ int main()
 	return 0;
 
 }*/
+//{
+	//double d = 300000, p = 6000, r = 0.01, m;
+	//m = log10(p / (p - d * r)) / log10(1 + r);
+	//printf("m=%5.2\n",m);
+	//
+int main()
 {
-	double d = 300000, p = 6000, r = 0.01, m;
-	m = log10(p / (p - d * r)) / log10(1 + r);
-	printf("m=%5.2\n",m);
+	char c1, c2;
+	c1 = 197;
+	c2 = 198;
+	printf("c1=%c,c2=%c\n", c1, c2);
+	printf("c1=%d,c2=%d\n", c1, c2);
 	return 0;
 }
