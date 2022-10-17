@@ -155,11 +155,12 @@
 	//return 0;
 int main()
 {
-	int c1;
-	
+	char c1,c2;
+	printf("请输入两个字符c1,c2;\n");
 	c1 = getchar();
-	printf("%d", c1);
-	putchar(c1);
+	c2 = getchar();
+	printf("putchar输出结果:");
+	putchar(c2);
 	return 0;
 }
 
