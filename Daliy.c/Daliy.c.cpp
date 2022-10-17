@@ -159,8 +159,8 @@ int main()
 	printf("请输入两个字符c1,c2;\n");
 	c1 = getchar();
 	c2 = getchar();
-	printf("putchar输出结果:");
-	putchar(c2);
+	printf("%d\n",c2);
+	putchar(c1);
 	return 0;
 }
 
