@@ -163,37 +163,28 @@
 //	putchar(%c1);
 //	return 0;
 //}
-//int main()
-//{
-//	int n;
-//	int count = 0;
-//	scanf_s("%d", &n);
-//	if (n==0)
-//	{
-//		return 0;
-//	}
-//	else
-//	{
-//		n = n / 10;
-//		count++;
-//		if (n !=0)
-//		{
-//			n = n / 10;
-//			count++;
-//		}
-//	}
-//	printf("%d", count);
-//}
-//
 int main()
 {
 	int n;
 	int count = 0;
 	scanf_s("%d", &n);
-	for (count =0; count=(count/10)!=0; count++)
+	while (n != 0)
 	{
-		
+		n = n / 10;
+		count++;
 	}
 	printf("%d", count);
 }
 
+//int main()
+//{
+//	int n;
+//	int count = 0;
+//	scanf_s("%d", &n);
+//	for (count =0; count=(count/10)!=0; count++)
+//	{
+//		
+//	}
+//	printf("%d", count);
+//}
+//
