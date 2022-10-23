@@ -153,15 +153,36 @@
 	//printf("c1=%c,c2=%c\n", c1, c2);
 	//printf("c1=%d,c2=%d\n", c1, c2);
 	//return 0;
+//int main()
+//{
+//	int c1,c2;
+//	printf("请输入两个字符c1,c2;\n");
+//	c1 = getchar();
+//	c2 = getchar();
+//	printf("%d\n",c2);
+//	putchar(%c1);
+//	return 0;
+//}
 int main()
 {
-	char c1,c2;
-	printf("请输入两个字符c1,c2;\n");
-	c1 = getchar();
-	c2 = getchar();
-	printf("%d\n",c2);
-	putchar(c1);
-	return 0;
+	int n;
+	int count = 0;
+	scanf_s("%d", &n);
+	if (n==0)
+	{
+		return 0;
+	}
+	else
+	{
+		n = n / 10;
+		count++;
+		if (n !=0)
+		{
+			n = n / 10;
+			count++;
+		}
+	}
+	printf("%d", count);
 }
 
 
