@@ -163,18 +163,20 @@
 //	putchar(%c1);
 //	return 0;
 //}
-int main()
-{
-	int n;
-	int count = 0;
-	scanf_s("%d", &n);
-	while (n != 0)
-	{
-		n = n / 10;
-		count++;
-	}
-	printf("%d", count);
-}
+//int main()
+//{
+//	int n;
+//	int count = 0;
+//	scanf_s("%d", &n);
+//	while (n != 0)
+//	{
+//		
+//		n = n / 10;
+//		count++;
+//		printf("%d", n);
+//	}
+//	
+
 
 //int main()
 //{
@@ -188,3 +190,18 @@ int main()
 //	printf("%d", count);
 //}
 //
+int main()
+{
+	int n;
+	scanf_s("%d", &n);
+	if (n=0)
+	{
+		printf("%d", n);
+	}
+	else
+	{
+		n = n % 10;
+		printf("%d", n);
+
+	}
+}
