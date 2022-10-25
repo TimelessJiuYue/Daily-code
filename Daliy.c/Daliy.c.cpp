@@ -190,18 +190,35 @@
 //	printf("%d", count);
 //}
 //
+//int main()
+//{
+//	int n;
+//	scanf_s("%d", &n);
+//	if (n=0)
+//	{
+//		printf("%d", n);
+//	}
+//	else
+//	{
+//		n = n % 10;
+//		printf("%d", n);
+//
+//	}
+//}
 int main()
 {
 	int n;
+	int sum = 0;
 	scanf_s("%d", &n);
-	if (n=0)
+	while (n<=10)
 	{
-		printf("%d", n);
-	}
-	else
-	{
-		n = n % 10;
-		printf("%d", n);
-
+		if (n!=0)
+		{
+			n = n * (n - 1);
+			n--;
+			sum == n;
+		}
+		printf("%d", sum);
+		return 0;
 	}
 }
