@@ -225,12 +225,13 @@
 int main()
 {
 	int x, y, z, n;
-	for ( n = 100; n < 1000; n++)
+	for ( n = 0; n < 1000; n++)
 	{
-		x = n;
-		y = n / 10;
-		z = n / 100;
-		if ((x * x * x) + (y - 10 * z) * (y - 10 * z) * (y - 10 * z) + (x - 10 * y) * (x - 10 * y)(x - 10 * y) = n);
-		printf("%d\n", n);
+		x = n % 10;
+		y = n / 10 % 10;
+		z = n / 100 % 10;
+		if (x * x * x + y * y * y + z * z * z == n);
+		
 	}
+	
 }
