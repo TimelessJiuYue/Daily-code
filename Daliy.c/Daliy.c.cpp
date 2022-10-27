@@ -222,16 +222,42 @@
 //		return 0;
 //	}
 //}
+//int main()
+//{
+//	int n = 0;
+//	int x = 0, y = 0, z = 0;
+//	for ( n = 0; n < 1000; n++)
+//	{
+//		x = n % 10;
+//		y = (n / 10) % 10;
+//		z = n / 100;
+//		if ((x * x * x + y * y * y + z * z * z) == n);
+//		{
+//			printf("%d\n", n);
+//		}
+//		
+//	}
+//	return 0;
+//	
+//}
 int main()
 {
-	int x, y, z, n;
-	for ( n = 0; n < 1000; n++)
+	int i, j, k, n, sumi, sumk, sumj;
+	printf("\n100-1000 包含的水仙花数分别有:  \n\n");
+	for ( n = 100; n < 1000; n++)
 	{
-		x = n % 10;
-		y = n / 10 % 10;
-		z = n / 100 % 10;
-		if (x * x * x + y * y * y + z * z * z == n);
-		
+		i = n / 100;
+		j = n / 10 % 10;
+		k = n % 10;
+		sumi = i * i * i;
+		sumj = j * j * j;
+		sumk = k * k * k;
+		if (n == sumi + sumk + sumj);
+		{
+			printf("%-5d", n);
+		}
+
 	}
-	
+	printf("\n");
+	return 0;
 }
