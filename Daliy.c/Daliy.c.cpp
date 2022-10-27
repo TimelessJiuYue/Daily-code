@@ -205,20 +205,32 @@
 //
 //	}
 //}
+//int main()
+//{
+//	int n;
+//	int sum = 0;
+//	scanf_s("%d", &n);
+//	while (n<=10)
+//	{
+//		if (n!=0)
+//		{
+//			n = n * (n - 1);
+//			n--;
+//			sum == n;
+//		}
+//		printf("%d", sum);
+//		return 0;
+//	}
+//}
 int main()
 {
-	int n;
-	int sum = 0;
-	scanf_s("%d", &n);
-	while (n<=10)
+	int x, y, z, n;
+	for ( n = 100; n < 1000; n++)
 	{
-		if (n!=0)
-		{
-			n = n * (n - 1);
-			n--;
-			sum == n;
-		}
-		printf("%d", sum);
-		return 0;
+		x = n;
+		y = n / 10;
+		z = n / 100;
+		if ((x * x * x) + (y - 10 * z) * (y - 10 * z) * (y - 10 * z) + (x - 10 * y) * (x - 10 * y)(x - 10 * y) = n);
+		printf("%d\n", n);
 	}
 }
