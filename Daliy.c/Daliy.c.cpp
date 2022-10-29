@@ -240,24 +240,37 @@
 //	return 0;
 //	
 //}
-int main()
-{
-	int i, j, k, n, sumi, sumk, sumj;
-	printf("\n100-1000 包含的水仙花数分别有:  \n\n");
-	for ( n = 100; n < 1000; n++)
-	{
-		i = n / 100;
-		j = n / 10 % 10;
-		k = n % 10;
-		sumi = i * i * i;
-		sumj = j * j * j;
-		sumk = k * k * k;
-		if (n == sumi + sumk + sumj);
-		{
-			printf("%-5d", n);
-		}
+//int main()
+//{
+//	int i, j, k, n, sumi, sumk, sumj;
+//	printf("\n100-1000 包含的水仙花数分别有:  \n\n");
+//	for ( n = 100; n < 1000; n++)
+//	{
+//		i = n / 100;
+//		j = n / 10 % 10;
+//		k = n % 10;
+//		sumi = i * i * i;
+//		sumj = j * j * j;
+//		sumk = k * k * k;
+//		if (n == sumi + sumk + sumj);
+//		{
+//			printf("%-5d", n);
+//		}
+//
+//	}
+//	printf("\n");
+//	return 0;
+//}
 
+main()
+{
+	int i;
+	double r;
+	r = 5.0;
+	printf("\n");
+	for ( i = 0; i <=9; i++)
+	{
+		printf("%10.71f\n", rndl(&r));
 	}
 	printf("\n");
-	return 0;
 }
