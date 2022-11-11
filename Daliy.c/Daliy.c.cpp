@@ -274,30 +274,46 @@
 //	}
 //	printf("\n");
 //}
-#include<stdlib.h>
+//#include<stdlib.h>
+//int main()
+//{
+//    int n = 0;
+//    int i, j, k;
+//    printf("你想输出菱形的行数是奇数几：");
+//    scanf_s("%d", &n);
+//    printf("你想要的菱形如下：\n");
+//    for (i = 1; i <= (n / 2 + 1); i++) //上三角
+//    {
+//        for (j = 1; j <= (n / 2 + 1 - i); j++)
+//            printf(" ");       //输出*前面的空格
+//        for (k = 1; k <= (2 * i - 1); k++)
+//            printf("*");		   //输出*
+//        printf("\n");
+//    }
+//    for (i = 1; i <= n / 2; i++)    //下三角
+//    {
+//        for (j = 1; j <= i; j++)
+//            printf(" ");      //输出*前面的空格
+//        for (k = 1; k <= (n - 2 * i); k++)
+//            printf("*");       //输出*
+//        printf("\n");
+//    }
+//    system("pause");
+//    return 0;
+//}
 int main()
 {
-    int n = 0;
-    int i, j, k;
-    printf("你想输出菱形的行数是奇数几：");
-    scanf_s("%d", &n);
-    printf("你想要的菱形如下：\n");
-    for (i = 1; i <= (n / 2 + 1); i++) //上三角
-    {
-        for (j = 1; j <= (n / 2 + 1 - i); j++)
-            printf(" ");       //输出*前面的空格
-        for (k = 1; k <= (2 * i - 1); k++)
-            printf("*");		   //输出*
-        printf("\n");
-    }
-    for (i = 1; i <= n / 2; i++)    //下三角
-    {
-        for (j = 1; j <= i; j++)
-            printf(" ");      //输出*前面的空格
-        for (k = 1; k <= (n - 2 * i); k++)
-            printf("*");       //输出*
-        printf("\n");
-    }
-    system("pause");
-    return 0;
+	char a = 'A',t;
+	int len = 8;
+	printf("%c\n", a);
+	for (int i = 0; i < sizeof(a)*8; i++)
+	{
+		t = a;
+		t >>= len - i - 1;
+		t = t & 1;
+		printf("%d", t > 0 ? 1 : 0);
+
+	}
+	printf("\n");
+	return 0;
 }
