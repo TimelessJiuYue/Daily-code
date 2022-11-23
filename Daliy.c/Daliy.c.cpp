@@ -301,19 +301,36 @@
 //    system("pause");
 //    return 0;
 //}
+//int main()
+//{
+//	char a = 'A',t;
+//	int len = 8;
+//	printf("%c\n", a);
+//	for (int i = 0; i < sizeof(a)*8; i++)
+//	{
+//		t = a;
+//		t >>= len - i - 1;
+//		t = t & 1;
+//		printf("%d", t > 0 ? 1 : 0);
+//
+//	}
+//	printf("\n");
+//	return 0;
+//}
+void add(int a,int b)
+{
+	int c = 0;
+	scanf_s("%d", &a);
+	c = a + b;
+	printf("%d", c);
+}
 int main()
 {
-	char a = 'A',t;
-	int len = 8;
-	printf("%c\n", a);
-	for (int i = 0; i < sizeof(a)*8; i++)
-	{
-		t = a;
-		t >>= len - i - 1;
-		t = t & 1;
-		printf("%d", t > 0 ? 1 : 0);
-
-	}
-	printf("\n");
-	return 0;
+	int a = 0;
+	int b = 5;
+	int c = 0;
+	
+	add(a, b);
+	
+	
 }
