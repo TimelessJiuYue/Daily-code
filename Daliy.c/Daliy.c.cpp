@@ -336,3 +336,17 @@
 //	
 //	
 //}
+int main()
+{
+	int n = 1;
+	int x = 0;
+	int day = 10;
+	for ( day = 10; day > 1; day--)
+	{
+		x = (n + 1) * 2;
+		n = x;
+
+	}
+	printf("第一天桃子有=:%d",x);
+	return 0;
+}
