@@ -18,6 +18,7 @@
 //	default:
 //		break;
 //	}
+//	
 //}
 //#include <stdio.h>
 //
@@ -317,20 +318,21 @@
 //	printf("\n");
 //	return 0;
 //}
-void add(int a,int b)
-{
-	int c = 0;
-	scanf_s("%d", &a);
-	c = a + b;
-	printf("%d", c);
-}
-int main()
-{
-	int a = 0;
-	int b = 5;
-	int c = 0;
-	
-	add(a, b);
-	
-	
-}
+//void add(int a,int b)
+//{
+//	int c = 0;
+//	scanf_s("%d", &a);
+//	scanf_s("%d", &b);
+//	c = a + b;
+//	printf("%d", c);
+//}
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	
+//	add(a, b);
+//	
+//	
+//}
