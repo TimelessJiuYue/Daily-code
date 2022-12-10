@@ -336,17 +336,25 @@
 //	
 //	
 //}
+
 int main()
 {
-	int n = 1;
-	int x = 0;
-	int day = 10;
-	for ( day = 10; day > 1; day--)
+	int i, j, k;
+	for (i = 0; i <= 3; i++)
 	{
-		x = (n + 1) * 2;
-		n = x;
-
+		for(j=0;j<=2-i;j++)
+		printf(" ");
+		for (k = 0; k <= 2 * i; k++)
+			printf("*");
+		printf("\n");
 	}
-	printf("第一天桃子有=:%d",x);
+	for (i = 0; i <= 2; i++);
+	{
+		for (j = 0; j <= i; j++);
+			printf(" ");
+		for (k = 0; k <= 4 - 2 * i; k++)
+			printf("*");
+		printf("\n");
+	}
 	return 0;
 }
