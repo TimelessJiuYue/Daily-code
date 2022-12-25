@@ -1,54 +1,25 @@
-﻿#include <stdio.h>
-#define N 5
-void main()
+﻿#include<stdio.h>
+#include <string.h>
+int main()
 {
-	int i, x, top, bott, mid, loca, a[N], flag = 1, sign;
-	char c;
-	printf("enter data:\n");
-	scanf_s("%d", &a[0]);//输入第一个数
-	i = 1;
-	while (i < N)//检查数是否输入完毕
+	int i = 0, j = 0, k = 0, m = 0;
+	char str1[50], str2[5];
+	gets_s(str1);
+	gets_s(str2);
+	while (str1[i] != '\0')
 	{
-		scanf_s("%d", &a[i]); //输入下一个数
-		if (a[i] >= a[i - 1])
-			i++;//如果输入的数不小于前一个数，数的序号加一
-		else
-			printf("enter this number agin:\n");
+		i++;
+		k++;
 	}
-	printf("\n");
-	for (i = 0; i < N; i++)
-		printf("\n");//输出全部15个数
-	printf("\n");
-	while (flag)
+	while (str2[j] != '\0')
 	{
-		printf("input the number to look for:");
-		scanf_s("%d", &x);//输入要查找的数
-		sign = 0;
-		loca = 0;
-		top = 0;
-		bott = N - 1;
-		if ((x < a[0]) || (x > a[N - 1]))
-			loca = -1;//要查找的数不在正常范围内
-		while ((!sign) && (top <= bott))
-		{
-			mid = (bott + top) / 2;//找到中间元素的下标
-			if (x == a[mid])
-			{
-				loca = mid;
-				printf("number=%d,loca=%d\n", x, loca + 1);
-				sign = 1;//找到该数
-
-			}
-			else
-				if (x < a[mid])
-					bott = mid - 1;
-				else top = mid + 1;
-		}
-		if (!sign || loca == -1)//意味没找到
-			printf("%d not in table.\n", x);
-		printf("continue(Y/N or y/n)");
-		scanf_s("%c", &c);
-		if (c == 'N' || c == 'n')
-			flag = 0;
+		j++;
+		m++;
 	}
+	for (i = 0; i <= k + m; i++)//注意：在把str2复制过来时连着最后一个'\0'也要复制过来
+	{
+		str1[i + k] = str2[i];
+	}
+	puts(str1);
+	return 0;
 }
